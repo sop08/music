@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,119 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Align children vertically */
+  justify-content: space-between; /* Distribute children evenly */
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.found {
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.nav-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.search {
+  flex: 1;
+  padding: 5px;
+  font-size: 19px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 99%; /* Set width to 100% to fill up the available space */
+  margin: auto;
+}
+
+.box {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.music-list,
+.playlist {
+  flex: 1;
+}
+
+.music-list,
+.playlist {
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.music-list li,
+.playlist li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.playlist h2 {
+  margin-top: 0;
+  align-content: left;
+}
+
+.playlist li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure the trash can button is at the left */
+  margin-bottom: 10px;
+}
+
+/*heart emoji*/
+.playlist button,
+.music-list button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/*transparency of trashcan*/
+.playlist button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+}
+.playlist button:hover {
+  color: #d32f2f; /* Darker shade on hover */
+}
+
+.playlist button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.music-container,
+.playlist-container {
+  width: 80%;
+  padding: 0 20px;
+}
+
+.music-container {
+  margin-right: 10px;
+}
+
+.playlist-container {
+  margin-left: 9px;
 }
