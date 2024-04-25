@@ -183,7 +183,7 @@ function NavBar({ children, query, setQuery, searchMusic }) {
 }
 
 function Logo() {
-  return <h1>Music App Logo</h1>;
+  return <h1>Soptify</h1>;
 }
 
 function NumberResult({ music }) {
