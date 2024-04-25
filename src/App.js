@@ -201,7 +201,7 @@ function Search({ query, setQuery }) {
       type="text"
       placeholder="Search Music.."
       value={query}
-      onChange={(e) => setQuery(e.target.value)} // corrected the event to onChange
+      onChange={(e) => setQuery(e.target.value)}
     />
   );
 }
